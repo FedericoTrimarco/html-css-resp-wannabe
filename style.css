@@ -77,23 +77,46 @@ img {
 RESPONSIVE 
 ***********/
 /* mobile */
-@media screen and (max-width: 419px) {
+@media screen and (max-width: 450px) {
    .row{
-     width: 100%;
-     margin-top: 50px;
-   }
+      width: 100%;
+      margin-top: 50px;
+    }
    
    .row h1{
-     font-size: 40px;
-   }
+      font-size: 40px;
+    }
 
    .row img{
       height: 150px;
-   }
+    }
 
    #lezioni .row .left, #lezioni .row .right,
    #steps .row .left, #steps .row .central, #steps .row .right {
       width: 100%;
       margin-bottom: 30px;
-   }
-}
+    }
+ }
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    .row{
+      width: 100%;
+    }
+
+    #lezioni .row .left, #lezioni .row .right {
+      width: calc(100% / 2 - 20px);
+      float: left;
+      padding: 0 10px;
+    }
+ 
+    #steps .row .left, #steps .row .central, #steps .row .right {
+      float: left;
+      width: calc(100% / 3 - 40px);
+      padding: 0 20px;
+    }
+
+    .row img{
+      height: 150px;
+    }
+ }
